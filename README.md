@@ -67,9 +67,14 @@ The main goal of this project is to:
 Both models performed almost equally well. Ridge Regression improved model stability but had a minimal effect on accuracy due to the default alpha (1.0). A larger alpha could increase its regularization effect.
 This project shows that:
   **Both models accurately predict rice prices.**
+  
   **Multicollinearity is present**, but Ridge Regression helps reduce its effect.
+  
     Model assumptions are generally satisfied.
     This approach could support future price forecasting or policymaking.
+
+    
+    (Linear Regression is not suitable for this dataset due to the presence of multicollinearity among the predictor variables, which can lead to unstable coefficient estimates and reduced predictive         reliability. Ridge Regression improved model stability by reducing the impact of highly correlated features, but further optimization can be achieved by using Lasso Regression. Lasso not only handles multicollinearity but also performs feature selection by shrinking some coefficients to zero, which can simplify the model and potentially improve predictive accuracy. Therefore, for more reliable and     interpretable predictions of rice prices, Lasso Regression is recommended over simple Linear Regression.)
 
 
 
